@@ -1,0 +1,178 @@
+/* Color #0B43A4 #047DFF */
+main h1.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 65px;
+    margin-bottom: 45px;
+    color: #2d3a4b;
+    text-align: center;
+}
+
+.container {
+    margin: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    width: 375px;
+    margin: 0 10px 20px 10px;
+}
+
+.container .card .header {
+    display: flex;
+    position: relative;
+    z-index: 999;
+}
+
+.container .card .header .row {
+    border-radius: 16px;
+}
+
+.container .card .header .row:nth-child(1) {
+    background-color: #fff;
+    width: 35%;
+    padding: 10px 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 
+              0 2px 4px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+}
+
+.container .card .header .row p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.container .card .header .row h1 {
+    margin: 7px 0;
+    font-weight: 600;
+}
+
+.container .card .header .row table {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.container .card .header .row table tr td:nth-child(2) {
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+
+.container .card .header .row:nth-child(2) {
+    background: linear-gradient(to left, #0B43A4, #047DFF);
+    color: #fff;
+    padding: 15px 15px 15px 28px;
+    width: 65%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 
+              0 2px 4px rgba(0,0,0,0.06);
+}
+
+.container .card .header img {
+    width: 100%;
+}
+
+.container .card .content {
+    background-color: #fff;
+    position: relative;
+    bottom: 20px;
+    padding: 40px 20px 30px;
+    border-radius: 16px;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.container .card .content .content-container {
+    max-height: 270px;
+    overflow-y: auto;
+    scrollbar-width:thin;
+    scrollbar-color: #0B43A4 #fff;
+}
+
+.container .card .content h1 {
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.container .card .content table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container .card .content table tr td {
+    height: 10px;
+}
+
+.container .card .content table tr td:nth-child(1) {
+    text-align: center;
+    width: 5%;
+}
+
+.container .card .content table tr td:nth-child(1) i {
+    font-size: 1.2rem;
+    color: #0B43A4;
+}
+
+.container .card .content table tr td:nth-child(2) {
+    padding-left: 12px;
+    vertical-align: middle;
+    width: 75%;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-right: 6px;
+    line-height: 18px;
+}
+
+.container .card .content table tr td.line {
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+}
+
+.container .card .content table tr td:nth-child(4) {
+    width: 35%;
+    padding-left: 5px;
+    line-height: 13px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+/* Desktop */
+@media (max-width: 1535px) {
+
+}
+
+/* Laptop */
+@media (max-width: 1279px) {
+
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+    .container .card {
+        font-size: 68%;
+        margin: 0 10px 5px 10px;
+    }
+
+    .container .card .content {
+        min-height: 200px;
+    }
+
+    .container .card .content table tr td:nth-child(2) {
+        font-size: 0.7rem;
+    }
+
+    .container .card .content table tr td:nth-child(4) {
+        font-size: 0.8rem;
+    }
+}

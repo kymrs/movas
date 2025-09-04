@@ -1,0 +1,175 @@
+/* Color #0B43A4 #047DFF */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url('../img/login-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+}
+
+/* Pusatkan container */
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kotak login */
+.box-login {
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Judul */
+.box-login img {
+  width: 330px;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  color: #0B43A4;
+}
+
+.input-group input {
+  width: 95%;
+  padding: 12px 45px 12px 45px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+  color: rgba(61, 61, 61, 0.5);
+}
+
+.input-group input:focus {
+  border-color: #8EC5FC;
+  outline: none;
+}
+
+.input-group .toggle-password {
+  left: 310px;
+  cursor: pointer;
+}
+
+/* Opsi bawah */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #fff;
+}
+
+.form-options label {
+  position: relative;
+  bottom: 5px;
+  left: 16px;
+}
+
+.form-options label input {
+  position: relative;
+  top: 2px;
+}
+
+.form-options a {
+  text-decoration: none;
+  right: 18px;
+  position: relative;
+  color: #fff;
+  transition: 300ms;
+}
+
+.form-options a:hover {
+  color: #222;
+}
+
+/* Tombol */
+.btn-login {
+  margin: 12px 0 6px;
+  position: relative;
+  width: 40%;
+  padding: 8px 12px;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  background: linear-gradient(to left, #0B43A4, #047DFF);
+}
+
+/* Pseudo-element di atas tombol */
+.btn-login::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(to left, #047DFF, #0B43A4); /* gradient tujuan saat hover */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.btn-login:hover::before {
+  opacity: 1;
+}
+
+p {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+p a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+p a:hover {
+  color: #222;
+}
+
+/* Handphone */
+@media (max-width: 576px){
+  .box-login {
+    margin: 0 20px;
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  .box-login img {
+    width: 300px;
+  }
+
+  .btn-login {
+    width: 50%;
+    padding: 12px 17px;
+    font-size: 1.2rem;
+  }
+
+  .input-group .toggle-password {
+    left: 265px;
+  }
+}

@@ -1,0 +1,152 @@
+/* Color #0B43A4 #047DFF */
+.vehicle-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.vehicle-card {
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    width: 260px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    position: relative;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.vehicle-card .car-icon {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.4s ease;
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 12px;
+    will-change: transform;
+}
+
+.vehicle-card:hover .car-icon {
+    transform: translateX(100px);
+}
+
+.vehicle-card .vehicle-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+    line-height: 25px;
+}
+
+.vehicle-card .vehicle-plate {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.vehicle-card .vehicle-type {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.vehicle-card .vehicle-year {
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.vehicle-card .arrow {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    font-size: 1.3rem;
+    color: #3b82f6;
+    opacity: 0.7;
+    transition: transform 0.4s ease;
+}
+
+.vehicle-card:hover .arrow {
+    transform: rotate(270deg);
+    opacity: 1;
+}
+
+/* Desktop */
+@media (max-width: 1535px) {
+
+}
+
+/* Laptop */
+@media (max-width: 1279px) {
+
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+    .vehicle-list {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .vehicle-card {
+        width: 135px;
+        padding: 15px;
+    }
+
+    .vehicle-card:hover {
+        transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    }
+
+    .vehicle-card .car-icon {
+        font-size: 1.7rem;
+        margin-bottom: 8px;
+    }
+
+    .vehicle-card:hover .car-icon {
+        transform: translateX(0);
+    }
+
+    .vehicle-card .vehicle-name {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 8px;
+        line-height: 18px;
+    }
+
+    .vehicle-card .vehicle-plate {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+
+    .vehicle-card .vehicle-type {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+
+    .vehicle-card .vehicle-year {
+        font-size: 0.80rem;
+        color: #475569;
+    }
+
+    .vehicle-card .arrow {
+        right: 15px;
+        bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .vehicle-card:hover .arrow {
+        transform: rotate(0deg);
+    }
+}
